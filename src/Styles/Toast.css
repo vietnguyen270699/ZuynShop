@@ -1,0 +1,32 @@
+
+.toast {
+    height: 50px;
+    position: fixed;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    top: 30px;
+    right: -140px;
+    transition: .4s;
+    line-height: 50px;
+    font-size: 14px;
+    padding: 0 20px;
+    opacity: 0;
+    z-index: -100;
+}
+.toast .icon {
+    margin-right: 20px;
+}
+.toast-show-success {
+    color: #248d63;
+    background-color: #b4fac5;
+    z-index: 10000;
+    opacity: 1;
+    right: 0px;
+}
+.toast-show-delete {
+    background-color: #fab4b4;
+    color: #8d2424;
+    z-index: 10000;
+    opacity: 1;
+    right: 0px;
+   
+}

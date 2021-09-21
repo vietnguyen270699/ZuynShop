@@ -1,0 +1,16 @@
+.Cart-content{
+    overflow: auto;
+    height: 470px;
+    
+  }
+  .Cart{
+      overflow: auto;
+      z-index: 2;
+  }
+  @media (max-width: 450px) {
+    .Cart-content{
+        height: 400px;
+        
+      }
+  }
+  

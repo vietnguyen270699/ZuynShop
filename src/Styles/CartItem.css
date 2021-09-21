@@ -1,0 +1,135 @@
+.cartitem {
+  position: relative;
+  max-width: 100vh;
+  height: 200px;
+  margin: 1rem auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.cartitem .cartitem__image img {
+  width: 200px;
+  margin: 20px;
+}
+.cartitem .cartitem__image img{display:block;transition: all .3s ease;}
+.cartitem .cartitem__image img:hover{transform: scale(1.2);}
+
+.cartitem .cartItem__name p {
+  margin: 10px;
+  padding: 10px 17px;
+}
+.cartitem .cartitem__price {
+  margin: 10px;
+  padding: 10px 17px;
+}
+.cartitem .cartItem__deleteBtn {
+  margin: 10px;
+  padding: 10px 17px;
+  background: #000;
+  color: white;
+}
+.in-cart {
+  transform: translateX(0);
+  align-items: center;
+  justify-content: center;
+}
+.cartitem .cartItem__deleteBtn:hover {
+  background: rgb(94, 94, 94);
+  color: rgb(255, 0, 0);
+}
+@media (max-width: 1320px) {
+  .cartitem {
+    max-width: 900px;
+  }
+}
+@media (max-width: 960px) {
+  .cartitem {
+    max-width: 600px;
+  }
+  .cartitem .cartItem__deleteBtn {
+    margin: 10px;
+    padding: 5px;
+  }
+}
+@media (max-width: 660px) {
+  .cartitem {
+    max-width: 500px;
+    display: block;
+    height: auto;
+  }
+  .cartitem__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cartitem .cartitem__image img {
+    width: 100px;
+  }
+  .cartitem .cartitem__price {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cartitem .cartitem__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cartitem .cartItem__select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 45%;
+  }
+  .cartitem .cartItem__deleteBtn {
+    
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     width: 97%;
+     margin: 8px 8px;
+  }
+}
+@media (max-width: 450px) {
+  .cartitem {
+    max-width: 400px;
+    display: block;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .cartitem .cartitem__image img {
+    width: 100px;
+  }
+  .cartitem .cartitem__price {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cartitem .cartitem__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cartitem .cartItem__select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 45%;
+  }
+  .cartitem .cartItem__deleteBtn {
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+  
+  }
+}
