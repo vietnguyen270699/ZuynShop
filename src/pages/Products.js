@@ -57,14 +57,14 @@ function Products() {
     return;
   };
   const changeMale = () => {
-    const male = products.filter((product) => product.type === "Male");
+    const male = products.filter((product) => product.category === "men's clothing");
     setProductsType(male);
     setSortPrice('Featured')
 
     return;
   };
   const changeFemale = () => {
-    const female = products.filter((product) => product.type === "Female");
+    const female = products.filter((product) => product.category === "women's clothing");
     setProductsType(female);
     setSortPrice('Featured')
     return;
@@ -166,7 +166,7 @@ function Products() {
                       <img
                         title=""
                         width="100%"
-                        src={product.imgUrl}
+                        src={product.image}
                         alt="img"
                       />
                     </p>
@@ -183,7 +183,7 @@ function Products() {
                         style={styles.product_title_link}
                       >
                         {" "}
-                        {product.name}{" "}
+                        {product.title}{" "}
                       </Link>
                     </CardTitle>
                     <CardText className="priceProduct">

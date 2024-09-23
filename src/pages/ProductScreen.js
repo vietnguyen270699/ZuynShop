@@ -12,7 +12,7 @@ function ProductScreen({ match }) {
   const [countCart, setCountCart] = useState(1);
   useEffect(() => {
     axios
-      .get(`https://w5tcr.sse.codesandbox.io/products/${match.params.id}`)
+      .get(`https://fakestoreapi.com/products/${match.params.id}`)
       .then((res) => {
         setItem(res.data);
       });
@@ -41,7 +41,7 @@ function ProductScreen({ match }) {
             <img
               src={
                 item !== null
-                  ? item.imgUrl
+                  ? item.image
                   : "https://xetai123.vn/images/loading-small.gif"
               }
               alt="product name"
@@ -49,7 +49,7 @@ function ProductScreen({ match }) {
           </div>
 
           <div className="left__info">
-            <p className="left__name">{item !== null ? item.name : "---"}</p>
+            <p className="left__name">{item !== null ? item.title : "---"}</p>
             <p>${item !== null ? item.price : "---"}</p>
             <p>Description: {item !== null ? item.description : "---"}</p>
           </div>

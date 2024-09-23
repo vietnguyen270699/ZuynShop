@@ -22,10 +22,10 @@ function CartItem(props) {
   return (
     <div className="cartitem">
       <div className="cartitem__image">
-        <img src={props.item.imgUrl} alt="name" />
+        <img src={props.item.image} alt="name" />
       </div>
       <Link to={`/product/${props.item.id}`} className="cartitem__name">
-        <p>{props.item.name}</p>
+        <p>{props.item.title}</p>
       </Link>
       <p className="cartitem__price">${props.item.price}</p>
 

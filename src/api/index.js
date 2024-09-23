@@ -1,5 +1,5 @@
 import axios from "axios";
 
-const URL = 'https://w5tcr.sse.codesandbox.io';
+const URL = 'https://fakestoreapi.com';
 
 export const fetchProducts = () => axios.get(`${URL}/products`);
