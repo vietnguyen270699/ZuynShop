@@ -44,6 +44,7 @@ function ProductScreen({ match }) {
                   ? item.image
                   : "https://xetai123.vn/images/loading-small.gif"
               }
+              width="100%"
               alt="product name"
             />
           </div>

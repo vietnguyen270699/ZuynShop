@@ -93,7 +93,7 @@
 .buttonAdd:hover{
    background-color: #615d5a !important;
 }
-.linkProduct:hover{
+.linkProduct{
     text-decoration: none;
 }
 

@@ -19,13 +19,18 @@ function CartItem(props) {
     minusCount(id);
   };
 
+
   return (
     <div className="cartitem">
       <div className="cartitem__image">
         <img src={props.item.image} alt="name" />
       </div>
-      <Link to={`/product/${props.item.id}`} className="cartitem__name">
-        <p>{props.item.title}</p>
+      <Link to={`/product/${props.item.id}`}
+       className="cartitem__name"
+       >
+        {" "}
+        {props.item.title}{" "}
+        
       </Link>
       <p className="cartitem__price">${props.item.price}</p>
 

@@ -12,15 +12,17 @@
 }
 
 .cartitem .cartitem__image img {
-  width: 200px;
+  width: 180px;
+  height: 180px;
   margin: 20px;
 }
 .cartitem .cartitem__image img{display:block;transition: all .3s ease;}
-.cartitem .cartitem__image img:hover{transform: scale(1.2);}
+.cartitem .cartitem__image img:hover{transform: scale(1.05);}
 
-.cartitem .cartItem__name p {
+.cartitem .cartitem__name {
   margin: 10px;
   padding: 10px 17px;
+  text-decoration: none;
 }
 .cartitem .cartitem__price {
   margin: 10px;
