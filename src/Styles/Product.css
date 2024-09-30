@@ -70,11 +70,13 @@
     background: #fc9953;
 }
 .productImg img{display:block;transition: all .3s ease;}
-.productImg img:hover{transform: scale(1.3);}
+.productImg img:hover{transform: scale(0.9);}
 .productImg p{
     display:block;
     overflow: hidden;
-    max-height: 240px;
+    height: 240px;
+    width: 100%;
+    transform: scale(0.8);
 }
 .cardBody{
    flex: 1;

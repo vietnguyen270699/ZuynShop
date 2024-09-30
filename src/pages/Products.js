@@ -165,7 +165,7 @@ function Products() {
                     <p>
                       <img
                         title=""
-                        width="100%"
+                        width="90%"
                         src={product.image}
                         alt="img"
                       />
